@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["es5", "dom"],
+    "module": "es6",
+    "moduleResolution": "node",
+    "mapRoot": "./",
+    "outDir": "../dist",
+    "rootDir": ".",
+    "noImplicitAny": false,
+    "sourceMap": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "typeRoots": [
+      "../node_modules/@types"
+    ]
+  }
+}

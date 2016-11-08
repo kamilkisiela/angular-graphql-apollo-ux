@@ -1,0 +1,52 @@
+{
+  "name": "angular-graphql",
+  "version": "0.0.0",
+  "description": "Example app that uses Apollo to improve UX",
+  "repository": {
+    "url": "kamilkisiela/angular-graphql-apollo-ux",
+    "type": "git"
+  },
+  "author": "Kamil Kisiela <kamil.kisiela@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "client": "webpack-dev-server",
+    "preserver": "tsc -p api/tsconfig.json",
+    "server": "nodemon dist/api/index.js"
+  },
+  "dependencies": {
+    "@angular/common": "^2.1.2",
+    "@angular/compiler": "^2.1.2",
+    "@angular/core": "^2.1.2",
+    "@angular/forms": "^2.1.2",
+    "@angular/platform-browser": "^2.1.2",
+    "@angular/platform-browser-dynamic": "^2.1.2",
+    "@angular/router": "^3.1.2",
+    "angular2-apollo": "^0.7.0",
+    "apollo-client": "^0.5.0",
+    "core-js": "^2.4.1",
+    "graphql-fragments": "^0.1.0",
+    "graphql-tag": "^0.1.16",
+    "rxjs": "5.0.0-beta.12",
+    "zone.js": "^0.6.26"
+  },
+  "devDependencies": {
+    "@types/body-parser": "^0.0.33",
+    "@types/chai": "^3.4.34",
+    "@types/cors": "^0.0.33",
+    "@types/es6-shim": "^0.31.32",
+    "body-parser": "^1.15.2",
+    "concurrently": "^3.1.0",
+    "cors": "^2.8.1",
+    "express": "^4.14.0",
+    "graphql-server-express": "^0.4.3",
+    "graphql-subscriptions": "^0.2.1",
+    "graphql-tools": "^0.8.1",
+    "nodemon": "^1.11.0",
+    "ts-loader": "^1.0.0",
+    "typed-graphql": "^1.0.2",
+    "typescript": "2.0.7",
+    "webpack": "2.1.0-beta.25",
+    "webpack-dev-server": "2.1.0-beta.10"
+  }
+}
